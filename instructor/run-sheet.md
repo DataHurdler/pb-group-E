@@ -1,47 +1,68 @@
 # Run Sheet
 
-One page for the day. Times are clock times; *italic* times are hard stops.
+One page for the day. *Italic* times are hard stops. Clock checks are in bold.
 
 | Clock | Block | On screen | Do | Watch for |
 | --- | --- | --- | --- | --- |
-| 8:15 | Setup | Wi-Fi + welcome slide | [8:15 checklist](prep-checklist.md#day-of-815) | |
-| **9:00** | **00 Welcome** | Weak vs CRAFT demo | Run both prompts live | Don't explain yet |
-| 9:04 | Intros | Intro prompt slide | Tables; fingers 0–3 | Note the 3s: future table helpers |
-| 9:12 | Pre-check | "Pre-check" slide | Hand out, collect at 9:17 | Must come before the agenda |
-| 9:17 | The day | Agenda + ground rules | Five ground rules | |
-| 9:22 | Sign in | First-prompt slide | Circulate | Anyone not signed in by 9:28 → pair them |
-| **9:30** | **01 How AI answers** | Hook vote | | |
-| 9:44 | Activity 1A | 1A slide + timer | Hand out policy + memo | Hint at 9:52 if <3 errors found |
-| 9:59 | 1A debrief | Answer key slide | Dwell on the FLSA citation | |
-| 10:04 | Safe use | Traffic light | **Agency specifics** | Don't skip |
-| 10:12 | Activity 1B | Cards | | |
-| 10:22 | 1B debrief | | Cards 2, 6, 8, 11 | |
-| *10:30* | **Break** | Timer | **Clock check: >10 min behind → cut list** | |
-| **10:45** | **02 CRAFT** | Worst-prompt slide | | |
-| 10:50 | Live build | CRAFT slides | Five steps, new chat each | |
-| 11:02 | Activity 2A | 2A slide + timer | Circulate: "show me your A" | |
-| 11:27 | 2A debrief | Tally on flip chart | | |
-| 11:35 | 2B setup | Not-today list | Before-you-paste rule | |
-| 11:38 | Activity 2B | Worksheet slide | | Real data being pasted |
-| 11:55 | Turn and tell | | Remind: **save your prompt** | |
-| *12:00* | **Lunch** | Warm-up slide already up | | |
-| **13:00** | **03 Stations** | Warm-up | Re-run 2B prompt | Typing within 2 min |
-| 13:05 | Four moves | Technique slides | | |
-| 13:15 | Stations | Station map + timer | Call time **13:27, 13:39** | |
-| 13:51 | Debrief | Flip-chart chart | | |
-| **14:00** | **04 Test and refine** | [Two summaries](../materials/slides/hook-summaries.md) | Vote, then "what does better mean?" | |
-| 14:03 | Method | | | |
-| 14:12 | Activity 4 | Log slide + timer | Check logs: one change per row | |
-| 14:37 | Debrief | | | |
-| *14:45* | **Break** | | **Clock check** | |
-| **15:00** | **05 Capstone** | Requirements | Exemplar for 60 s only | |
-| 15:04 | Build | Timer | | |
-| 15:19 | Partner test | Rubric slide | | "Looks good!" with no scores |
-| 15:31 | Revise | | | |
-| 15:38 | Save | | Find 2 share-out volunteers | |
-| **15:40** | **06 Wrap-up** | | Two share-outs | |
-| 15:45 | Post-check | | Same codes as morning | |
-| 15:50 | Monday plan | Index-card slide | | |
-| 15:54 | Close | Resources | Parking lot | |
-| 15:58 | Feedback | Form link/QR | | |
-| *16:00* | **End** | | | |
+| 8:00 | Setup | Wi-Fi + welcome slide | [8:00 checklist](prep-checklist.md#day-of-800) | |
+| **8:30** | **00 Welcome** | Weak vs structured demo | Run both live | Don't explain yet |
+| 8:34 | Intros | Intro slide | Index cards: one task that eats your week | Note the 3s: table helpers |
+| 8:41 | Pre-check | "Pre-check" slide | Hand out, collect at 8:46 | Must come before the agenda |
+| 8:46 | The day | Objectives + ground rules | Six ground rules | |
+| 8:51 | Sign in | First-prompt slide | Screen walkthrough: new chat, modes, uploads | **Work** account. Anyone stuck at 8:58 → pair them |
+| **9:00** | **01 How AI uses prompts** | Hook vote | | |
+| 9:03 | How it works | Context, modes, variability | | |
+| 9:13 | Poke the model | Brookfall telework question | Hands: invented / refused / asked | Is search on? |
+| 9:21 | Activity 01 | Score card + timer | Policy + memo to each group | Hint at 9:29 if fewer than 3 found |
+| 9:37 | Debrief | Answer key slide | Dwell on the FLSA citation | |
+| 9:42 | How it fails | Failure table; Mata v. Avianca | | |
+| 9:50 | Flipping isn't checking | Three prompts | Predictions first | |
+| 9:57 | Bridge | | | |
+| *10:00* | **Break** | Timer | **Clock check: >10 min behind → cut list** | |
+| **10:15** | **02 Safe use** | Washington logs case | | |
+| 10:18 | The rules | Traffic light, records, injection | **Agency specifics** | Don't cut |
+| 10:26 | Card sort | Cards | | |
+| 10:34 | Clean this prompt | Risky prompt | "Don't run it" | |
+| 10:40 | Debrief | | Cards 2, 4, 6, 8, 11 | |
+| **10:45** | **03 Anatomy** | Worst-prompt slide | Flip-chart the "what's missing" answers | |
+| 10:50 | Six slots, live | Slot slides | One slot per step, new chat each | |
+| 11:02 | Diagnose | [Three outputs](../materials/slides/diagnose-outputs.md) | Name the slot | |
+| 11:06 | Principles | Framework map | | |
+| 11:12 | Activity 03a | v0–v5 table | "Show me your Audience" | |
+| 11:34 | Debrief | Tally | "The output was ___, so ___ was empty" | |
+| 11:40 | 03b setup | Not-today list | Before-you-paste | |
+| 11:42 | Activity 03b | Slot worksheet | | Real data being pasted |
+| 11:57 | Turn and tell | | **Save your prompt** | |
+| *12:00* | **Lunch** | Warm-up slide already up | **Clock check** | |
+| **1:00** | **04 Techniques** | Warm-up | Re-run 03b prompt | Typing within 2 min |
+| 1:05 | Ten techniques | Failure → technique table | Ground-it live demo | |
+| 1:17 | Stations | Station map + timer | Round 1 everyone on A; call time **1:29, 1:41** | Station C: who checked for comment 17? Station D card face down |
+| 1:53 | Debrief | Flip chart | Injection reveal | |
+| **2:05** | **05 Test and refine** | [Two summaries](../materials/slides/hook-summaries.md) | Vote; "what does better mean?" | |
+| 2:08 | Method | | | |
+| 2:17 | Make it checkable | Vague → checkable | | |
+| 2:20 | Activity 05 | Log + timer | One change per row; a second input | |
+| 2:42 | Debrief | | | |
+| 2:47 | Bridge | What's wrong with A | | |
+| *2:50* | **Break** | | **Clock check** | |
+| **3:05** | **06 Reuse and capstone** | Library, setups, when not to use | Exemplar for 60 s only | |
+| 3:13 | Build | Template skeleton | | |
+| 3:25 | Cold partner test | Rubric | "Write down every question" | "Looks good!" with no scores |
+| 3:36 | Revise | | | |
+| 3:42 | Save | | | |
+| **3:45** | **07 Wrap-up** | Post-check | Same code word | |
+| 3:50 | Monday card | Four items | Back of the 8:30 card | |
+| 3:54 | Close | Series slide | Parking lot | |
+| 3:58 | Feedback | Form link / QR | | |
+| *4:00* | **End** | | | |
+
+## If something breaks
+
+| Situation | Response |
+| --- | --- |
+| Someone pastes real work data | Stop them quietly and privately; help them delete the chat and make a stand-in. Never name them |
+| The tool is down for everyone | Switch to the outputs captured in the dry run; participants write and critique prompts on paper |
+| One participant hits a usage cap | Pair them for the rest of the day |
+| Wi-Fi fails | Instructor hotspot for demos; pairs on any working connection |
+| Projector fails | Printed handouts carry every prompt; read them aloud |
+| A demo gives an unexpected result | Use it: "Results vary. What does this tell us?" |

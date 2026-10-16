@@ -1,7 +1,7 @@
 # Public Notice: Water System Flushing
 
 *Fictional, for training use. This is the notice as written by the department.
-In Activity 2A you will rewrite it so a resident can understand it in under a
+In Module 03 you will rewrite it so a resident can understand it in under a
 minute.*
 
 ---

@@ -1,6 +1,8 @@
 # Raw Notes: Public Works Weekly Staff Meeting
 
-*Fictional, for training use. Typed fast by whoever was closest to the laptop.*
+*Fictional, for training use. Typed fast by whoever was closest to the laptop.
+In Brookfall, Parks and Recreation is a division of Public Works, so Parks
+business comes up here too.*
 
 ---
 

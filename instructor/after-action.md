@@ -11,7 +11,7 @@ first.
 
 | | Pre | Post |
 | --- | --- | --- |
-| Mean score (of 8) | | |
+| Mean score (of 10) | | |
 | Mean confidence (of 5) | | |
 | Most-missed question | | |
 

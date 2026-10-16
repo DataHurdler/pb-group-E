@@ -6,8 +6,10 @@ single self-contained [course-day.html](course-day.html) that works offline.
 - **Present:** open the HTML in a browser. `F` full screen, `S` speaker notes,
   `Esc` slide overview.
 - **Edit:** change the `.qmd`, then `quarto render slides/course-day.qmd`.
-- **Before the day:** replace every `[BRACKETED]` placeholder (Wi-Fi, approved
-  tool, policy, records officer, feedback link) and re-render.
+- **Before the day:** replace every logistics placeholder (`[NETWORK]`,
+  `[PASSWORD]`, `[APPROVED TOOL]`, `[POLICY]`, `[POLICY OWNER]`,
+  `[RECORDS OFFICER]`, `[DISCLOSURE RULE]`, `[FORM LINK / QR CODE]`) and
+  re-render. Other `[BRACKETS]` are part of prompt templates; leave them.
 - **Print / PDF:** open the HTML with `?print-pdf` appended to the URL and print
   from the browser.
 

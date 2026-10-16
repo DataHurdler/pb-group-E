@@ -6,69 +6,73 @@ Status: ready
 
 | | Minutes |
 | --- | --- |
-| Contact time, 9:00–4:00 less a 60-minute lunch | 360 |
-| Two 15-minute breaks | −30 |
-| **Instructional time** | **330** |
-| Instructor talk and demos | 86 (26%) |
-| Participants doing: activities, practice, debriefs, checks | 244 (74%) |
+| On site, 8:30–4:00 | 450 |
+| Lunch, 12:00–1:00 | −60 |
+| Two breaks, 10:00 and 2:50 | −30 |
+| **Instructional time** | **360 (6 hours)** |
+| Instructor talk and demos | 105 (29%) |
+| Participants doing: activities, practice, debriefs, checks | 255 (71%) |
+
+Run `python3 tools/check_timing.py` after editing any module. It checks that
+every module's timed outline adds up to its slot and that the day totals 360.
 
 ## The day
 
-| Time | Min | Block | Talk / do | Outcomes |
+| Time | Min | Block | Talk / do | Objectives |
 | --- | --- | --- | --- | --- |
-| 9:00 | 30 | [**00 Welcome and first prompt**](modules/00-welcome/README.md): live before/after demo, introductions, pre-check, sign in and run a first prompt | 12 / 18 | — |
-| 9:30 | 60 | [**01 How AI answers, and using it safely**](modules/01-how-ai-answers/README.md): prediction not lookup, fabrication, what never goes in a prompt, who owns the output | 22 / 38 | LO1, LO2 |
-| 10:30 | 15 | Break | | |
-| 10:45 | 75 | [**02 The CRAFT prompt**](modules/02-craft/README.md): Context, Request, Audience, Format, Test; rewrite weak prompts; version 1 of your own task | 18 / 57 | LO3 |
-| 12:00 | 60 | Lunch | | |
-| 13:00 | 60 | [**03 Technique stations**](modules/03-techniques/README.md): ground it, show it, break it down, let it ask | 14 / 46 | LO4 |
-| 14:00 | 45 | [**04 Test, verify, refine**](modules/04-test-and-refine/README.md): criteria first, the verification checklist, one change at a time | 12 / 33 | LO5 |
-| 14:45 | 15 | Break | | |
-| 15:00 | 40 | [**05 Capstone: your reusable prompt**](modules/05-capstone/README.md): build a template for your own task, partner-test it, revise | 4 / 36 | LO3–LO5 |
-| 15:40 | 20 | [**06 Wrap-up**](modules/06-wrap-up/README.md): two share-outs, post-check, Monday plan, feedback | 4 / 16 | All |
-| 16:00 | | End | | |
+| 8:30 | 30 | [**00 Welcome and first prompt**](modules/00-welcome/README.md): before/after demo, introductions, pre-check, sign in to the *work* account | 11 / 19 | — |
+| 9:00 | 60 | [**01 How AI uses prompts and context**](modules/01-how-ai-uses-prompts/README.md): prediction, context, modes, variability, confabulation, sycophancy | 22 / 38 | LO1 |
+| 10:00 | 15 | **Break** | | |
+| 10:15 | 30 | [**02 Safe and accountable use**](modules/02-safe-use/README.md): approved accounts, the traffic light, records, disclosure, high-impact uses, prompt injection | 12 / 18 | SU |
+| 10:45 | 75 | [**03 Anatomy of a prompt**](modules/03-prompt-anatomy/README.md): six slots, diagnose from the output, vendor frameworks, your own task v1 | 20 / 55 | LO2 |
+| 12:00 | 60 | **Lunch** | | |
+| 1:00 | 65 | [**04 Techniques**](modules/04-techniques/README.md): ten techniques, six stations, plain version first | 16 / 49 | LO3 |
+| 2:05 | 45 | [**05 Test and refine**](modules/05-test-and-refine/README.md): checkable criteria, test cases, one change at a time, verification, AI checking AI | 12 / 33 | LO4 |
+| 2:50 | 15 | **Break** | | |
+| 3:05 | 40 | [**06 Reuse, efficiency, and capstone**](modules/06-reuse-and-capstone/README.md): templates, library, saved setups, when not to use AI; build and cold-test your template | 8 / 32 | LO5 |
+| 3:45 | 15 | [**07 Wrap-up**](modules/07-wrap-up/README.md): post-check, Monday card, close, feedback | 4 / 11 | All |
+| 4:00 | | End | | |
 
 ## Pacing rules
 
 - **No instructor talk longer than 12 minutes** before participants do something.
-- **After lunch, hands on within five minutes.** Module 03 opens with a warm-up
-  challenge, not slides.
-- **Stop activities on time.** Debrief what groups have; unfinished work is
-  still discussable.
-- **Clock checks at 10:30 and 14:45.** More than 10 minutes behind at either
-  one: apply the cut list immediately.
-- **Parking lot.** Policy, legal, and "what about tool X" questions go on a
-  flip-chart sheet. Answer them in the last five minutes of Module 06 or in the
-  follow-up email.
+- **After lunch, hands on within two minutes.** Module 04 opens with the warm-up
+  already on screen.
+- **Stop activities on time.** Debrief what groups have.
+- **Clock checks at 10:00, 12:00, and 2:50.** More than 10 minutes behind:
+  apply the cut list immediately, not later.
+- **Parking lot** for policy, legal, and "what about tool X" questions.
+  Answered in Module 07 or in the follow-up email.
 
 ## If the day runs long: cut in this order
 
-Each is a clean removal, not a squeeze.
+1. Module 04: two stations instead of three; *Ground it* stays required (−12).
+2. Module 03: Part 2 of Activity 03a becomes optional (−7).
+3. Module 01: the sycophancy check becomes an instructor demo (−4).
+4. Module 02: the card sort uses 6 cards instead of 12 (−4).
+5. Module 00: drop the experience poll and shorten "The day" to 3 minutes (−3).
 
-1. Module 06 share-outs: drop from two to none; share via the follow-up email (−5).
-2. Module 03: groups do two stations instead of three; *Ground it* stays
-   mandatory (−12).
-3. Module 02: the gallery debrief becomes "one pair reads theirs aloud" (−5).
-4. Module 01: the card sort uses 6 cards instead of 12 (−4).
-5. Module 00: introductions happen at tables only, not reported to the room (−3).
-
-**Never cut:** the Module 01 data rules, the Module 02 own-task version 1, the
-Module 04 verification practice, or the capstone partner test. These are where
-the outcomes are actually practised and checked.
+**Never cut:** the Module 02 safe-use talk, the Module 03 own-task version 1,
+the Module 05 activity, the Module 06 partner test, or the Module 07
+post-check.
 
 ## If there's extra time
 
-1. Open Q&A from the parking lot (+10).
-2. Module 03: a fourth station for fast groups (+12).
-3. Capstone gallery walk: templates on screens, everyone runs one other
-   person's template (+15).
+1. **Prompt bake-off** (+20): every table writes a prompt for the same brief
+   (a road-closure notice); outputs are judged blind against the Module 05
+   criteria; then the winning *prompt* is revealed and the room explains why it
+   won. Optionally, have an AI judge the same outputs and compare.
+2. **Reverse-engineer the prompt** (+10): show three outputs; tables guess the
+   prompt that produced each, slot by slot.
+3. **Share-outs** (+5): two volunteers show their capstone template.
 
-## Outcome coverage
+## Coverage
 
-| Outcome | Introduced | Practised | Checked |
+| | Introduced | Practised | Checked |
 | --- | --- | --- | --- |
-| LO1 How it works and fails | 01 | 01 (1A), 04 | Pre/post Q1–3 |
-| LO2 Safe and accountable use | 01 | 01 (1B), every "before you paste" check, 05 | Pre/post Q4–6, card sort |
-| LO3 CRAFT | 02 | 02, 03, 05 | Activity 2A, capstone row 1 |
-| LO4 Techniques | 03 | 03, 05 | Pre/post Q7–8, capstone row 2 |
-| LO5 Verify, refine, reuse | 04 | 04, 05 | Activity 4 log, capstone rows 3–5 |
+| LO1 How LLMs use prompts and context | 01 | 01, 04 (warm-up), 05 | Pre/post Q1–3, Activity 01 |
+| LO2 Clear, structured prompts | 03 | 03, 04, 06 | Pre/post Q6, Activity 03a, capstone row 1 |
+| LO3 Techniques | 04 | 04, 06 | Pre/post Q7–8, Activity 04 stations, capstone row 2 |
+| LO4 Testing and refining | 05 | 05, 06 | Pre/post Q9, Activity 05 log, capstone row 3 |
+| LO5 Efficiency | 06 | 06 | Pre/post Q10, capstone row 4 |
+| SU Safe use | 02 | 02, every "before you paste", 04 station C, 06 | Pre/post Q4–5, Activity 02, capstone row 5 |

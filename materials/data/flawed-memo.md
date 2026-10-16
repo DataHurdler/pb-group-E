@@ -1,7 +1,7 @@
 # Memo: Summary of the New Telework Policy
 
 *This memo was "written by an AI" from the telework policy. Some of it is right
-and some of it is wrong. Your job in Activity 1A is to find out which.*
+and some of it is wrong. Your job in Activity 01 is to find out which.*
 
 ---
 

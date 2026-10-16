@@ -19,6 +19,9 @@ $presentation-heading-font-weight: 600;
   white-space: pre-wrap;
 }
 .reveal .prompt.weak { border-left-color: #b54708; }
+/* Multi-line prompts: line breaks come from Markdown hard breaks (\), so
+   collapse the source newlines that pre-wrap would otherwise double. */
+.reveal .prompt.multiline { white-space: normal; }
 
 .reveal .activity {
   background: #eef6ee;
