@@ -1,0 +1,5 @@
+.DS_Store
+*.swp
+~$*
+.quarto/
+slides/*_files/

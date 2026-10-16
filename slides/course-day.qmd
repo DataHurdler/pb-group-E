@@ -1,0 +1,531 @@
+---
+title: "Prompt Engineering for Public Service"
+subtitle: "A First Day with AI"
+format:
+  revealjs:
+    theme: [default, course.scss]
+    slide-number: true
+    scrollable: true
+    hash-type: number
+    transition: none
+    embed-resources: true
+    width: 1280
+    height: 720
+---
+
+## Welcome {.center}
+
+Wi-Fi: **[NETWORK]** · Password: **[PASSWORD]**
+
+Sign in to **[APPROVED TOOL]** while we wait.
+
+::: notes
+On screen from 8:15. Fill in Wi-Fi and tool before the day.
+:::
+
+# 00 Welcome {.section-title}
+
+[9:00–9:30]{.section-time}
+
+## Same task, two prompts {.smaller}
+
+:::: {.columns}
+::: {.column width="40%"}
+::: {.prompt .weak}
+Write a notice about water flushing.
+:::
+:::
+::: {.column width="60%"}
+::: {.prompt}
+I work in the Public Works department of a mid-sized city. Below is our current notice about water-main flushing.
+
+Rewrite it so a resident can understand it in under a minute. Readers are residents, many on a phone, some with limited English. 6th-grade reading level.
+
+Format: under 150 words; headline, then "What's happening", "What you should do", "Questions?". Keep every date, time, area, and phone number.
+
+Use only facts in the notice. After the rewrite, list anything you left out.
+:::
+:::
+::::
+
+::: notes
+Run both live in separate new chats, pasting materials/data/hydrant-notice.md with the second. Point at one invented detail in the weak result. Don't explain: "By lunch you'll be able to say exactly why the second one worked."
+:::
+
+## At your table
+
+1. Your name and where you work
+2. One task that eats your week
+3. Your AI experience, on your fingers:
+
+**0** never · **1** tried it · **2** sometimes · **3** weekly
+
+::: notes
+8 minutes. Note the 3s; they can be table helpers.
+:::
+
+## Pre-check
+
+Eight questions · five minutes · not graded
+
+Write a **code** you'll remember at 3:45, not your name.
+
+## Today
+
+| | |
+| --- | --- |
+| 9:30 | How AI answers, and using it safely |
+| 10:45 | The CRAFT prompt |
+| 12:00 | *Lunch* |
+| 1:00 | Technique stations |
+| 2:00 | Test, verify, refine |
+| 3:00 | Capstone: your reusable prompt |
+| 3:40 | Wrap-up |
+
+You'll leave with a **tested prompt for a task from your own job.**
+
+## Ground rules
+
+1. **Fictional data only today.** Everything is in the Brookfall folder.
+2. **New task, new chat.**
+3. **Skeptics welcome.** Knowing when *not* to use AI counts as success.
+4. **Parking lot** for policy and "what about tool X" questions.
+5. **You keep what you make.**
+
+## Your first prompt
+
+::: prompt
+In three sentences, explain what you are and three things you can't do well, for a city employee who has never used an AI assistant.
+:::
+
+Then ask it a follow-up question about something it said.
+
+::: notes
+Circulate. Anyone not working by 9:28 pairs with a neighbour.
+:::
+
+# 01 How AI answers {.section-title}
+
+[9:30–10:30]{.section-time}
+
+## Where does the answer come from?
+
+a) It searches the web
+
+b) It looks it up in a database
+
+c) It predicts what words should come next
+
+::: notes
+Hands up. Don't answer yet.
+:::
+
+## It predicts
+
+- It has learned patterns from an enormous amount of text
+- It writes one piece at a time, choosing **a likely next piece**
+- Some tools also search the web or read your files, but the writing is still prediction
+
+**Likely is not the same as true.**
+
+## Good at
+
+- Drafting from your notes
+- Rewriting: shorter, plainer, warmer, another reading level
+- Summarizing **text you give it**
+- Turning a mess into a structure
+- Brainstorming options
+
+## Fails in predictable ways
+
+| | |
+| --- | --- |
+| **Fabrication** | When it doesn't know, it still produces something that looks like an answer |
+| **Doesn't know your world** | Your policies, last month's vote, "the usual form" — unless you tell it |
+| **Agreeable and inconsistent** | Goes along with your framing; may answer differently next time |
+| **Weak at exact counts** | And arithmetic, without a calculator tool |
+
+## A mental model
+
+A very fast, very well-read **new hire on their first day**,
+
+who **never says "I don't know."**
+
+Great first drafts. You'd never send their work out unchecked.
+
+## It only knows this conversation
+
+- Plus any memory or custom instructions you've turned on
+- That's why: **new task, new chat**
+
+## Activity 1A: Spot the fabrication
+
+::: activity
+**15 min · groups**
+
+1. **2 min** Read the memo alone. Trust it? 1–5
+2. **8 min** Check every claim against the policy: ✓ ✗ ?
+3. **3 min** Sort: **changed**, **invented**, **dropped**
+4. **2 min** Pick the most harmful error
+:::
+
+::: notes
+Hand out telework-policy.md and flawed-memo.md. Hint at 9:52 if a group has found fewer than three: "check every number", then "check the legal citation".
+:::
+
+## What you found {.smaller}
+
+| Memo | Policy |
+| --- | --- |
+| 3 months' service | **6 months** |
+| 3 days a week | **2 days** |
+| Valid 2 years | **Renew every January** |
+| $40/month internet | **No reimbursement** |
+| Out of state: never | **With HR approval, 10 days/yr** |
+| "FLSA Section 9.2" | **Doesn't exist** |
+
+Dropped: field-supervisor exclusion · immediate termination for cause
+
+::: notes
+Ask each group's most harmful first, then reveal. Dwell on the FLSA citation: specific, official-sounding, invented. Ask "Where did it come from?" Want: "it predicted something that sounded like a legal basis".
+:::
+
+## Using it safely
+
+1. **Approved tools only:** [APPROVED TOOL], under [POLICY]
+2. Personal accounts have **different data terms**, even under the same name
+
+::: notes
+Fill in the agency specifics. This is the most important eight minutes of the day for the host agency. Do not cut.
+:::
+
+## Before you paste: five questions
+
+1. Is this tool approved, **for this kind of information**?
+2. Does it identify a person?
+3. Is it restricted: personnel, medical, tax, legal, security, procurement?
+4. Would I be comfortable seeing this prompt **released**?
+5. Could I use **made-up or removed** details instead?
+
+## The traffic light
+
+| | | |
+| --- | --- | --- |
+| 🟢 | Public or fictional | Approved tool: fine |
+| 🟡 | Internal, not sensitive | Approved tool only; remove names |
+| 🔴 | Personal or restricted | Don't, unless specifically authorized in writing |
+
+## Records, and responsibility
+
+- AI chats for public business **may be public records**. Ask [RECORDS OFFICER].
+- **You sign it, you own it.** "The AI wrote it" is not a defence.
+- **Not for decisions about people:** eligibility, hiring, discipline, enforcement, benefits.
+- The fix is usually easy: **[Resident], [address]**.
+
+## Activity 1B: Safe to paste?
+
+::: activity
+**10 min · groups**
+
+1. **6 min** Sort 12 cards: 🟢 🟡 🔴
+2. **2 min** For each 🔴: how could you still get help?
+3. **2 min** Pick the card you argued about most
+:::
+
+::: notes
+Debrief cards 2, 6, 8, 11. Card 11 (public comments with phone numbers) is usually the best argument.
+:::
+
+## {.center}
+
+It writes well and checks nothing.
+
+**What you get depends on what you give it.**
+
+# Break {.section-title}
+
+Back at **10:45**
+
+# 02 The CRAFT prompt {.section-title}
+
+[10:45–12:00]{.section-time}
+
+## Worst prompt contest
+
+Write the **vaguest possible prompt** for:
+
+> *Reply to a resident complaint.*
+
+Run it. Read out your best-worst result.
+
+## CRAFT
+
+| | |
+| --- | --- |
+| **C**ontext | What it can't guess: who you are, the situation, the source |
+| **R**equest | One job, starting with a verb |
+| **A**udience | Who reads it, what they know, tone, reading level |
+| **F**ormat | Length, structure, what to keep exactly |
+| **T**est | How it should check itself, and what to flag for you |
+
+## Build it live
+
+1. **R** Rewrite this notice in plain language
+2. **+A** Residents, on phones, some limited English, 6th grade
+3. **+F** Under 150 words, headline + 3 sections, keep every date and number
+4. **+C** "I work in Public Works…", source in `<notice>` tags
+5. **+T** Use only the notice; list what you left out
+
+::: notes
+New chat each step. Ask the room what to add before each. At step 4, note that Context mattered less because the notice carried it.
+:::
+
+## Small things that matter
+
+- **Tags around pasted text:** `<notice> … </notice>`
+- **Two jobs, two prompts**
+- **Say what to keep exactly:** dates, numbers, contacts
+- **Small fixes:** reply in the chat. **New prompt:** new chat.
+
+## Activity 2A: Rescue a weak prompt {.smaller}
+
+::: activity
+**25 min · pairs** · Do #1, then #2 or #3
+
+| | Weak prompt | With |
+| --- | --- | --- |
+| 1 | "Make this easier to read." | hydrant notice |
+| 2 | "Summarize these notes." | meeting notes |
+| 3 | "Write an email about the new telework policy." | *nothing* |
+
+Run weak → write CRAFT → run → compare
+:::
+
+::: notes
+Circulate: "Show me your Audience."
+:::
+
+## Which letter helped most?
+
+**C · R · A · F · T**
+
+::: notes
+Tally on the flip chart. Context and Format usually win; Audience often wins for the notice.
+:::
+
+## Activity 2B: Your own task, v1
+
+::: activity
+**17 min · individual**
+
+1. Pick a task you do at least monthly: writing, summarizing, rewriting
+2. **Before you paste:** make up a stand-in for anything 🟡 or 🔴
+3. Fill in CRAFT
+4. Run it; note what's off
+5. **Save it.** You need it at 3:00.
+:::
+
+**Not today:** decisions about a specific person.
+
+## Turn and tell
+
+Your task, and what was off in version 1.
+
+After lunch: four techniques to fix exactly that.
+
+# Lunch {.section-title}
+
+Back at **1:00**
+
+# 03 Technique stations {.section-title}
+
+[1:00–2:00]{.section-time}
+
+## Warm-up
+
+Run your **2B prompt** again, in a **new chat**.
+
+Same answer as before lunch? What changed?
+
+## Four moves {.smaller}
+
+| Move | When | Say |
+| --- | --- | --- |
+| **Ground it** | It must come from *your* document | "Answer only from the text below. If it isn't there, say so." |
+| **Show it** | A style that's hard to describe | "Here are two examples of the style I want…" |
+| **Break it down** | Many steps, or muddled / miscounted | "First, list the themes. Stop." |
+| **Let it ask** | You don't know what it needs | "Before you start, ask me up to five questions." |
+
+::: notes
+One short live example each. Ground it: "Does Brookfall reimburse telework internet?" with and without the policy.
+:::
+
+## Two more you'll hear about
+
+- **"Think it through first."** Helps on reasoning-heavy tasks; many tools now do it automatically
+- **Roles** ("You are a communications officer…") nudge tone, but **don't replace context**
+
+## Stations {.smaller}
+
+::: activity
+**3 × 12 min · pairs** · **A**, plus two of **B C D**
+
+| | Technique | Task |
+| --- | --- | --- |
+| A | Ground it | Telework FAQ |
+| B | Show it | Pothole reply |
+| C | Break it down | Public-comment summary |
+| D | Let it ask | Job posting |
+
+Plain version first, then technique version, **new chat each.**
+
+Write: *"This technique helps when…"*
+:::
+
+::: notes
+Call time at 1:27 and 1:39.
+:::
+
+## Which technique when?
+
+| When your problem is… | Try |
+| --- | --- |
+| It made things up / got your rules wrong | Ground it |
+| Right content, wrong voice or shape | Show it |
+| Big task; numbers wrong | Break it down |
+| It filled blanks with guesses | Let it ask |
+
+::: notes
+Build it on the flip chart from the room first, then show this.
+:::
+
+# 04 Test, verify, refine {.section-title}
+
+[2:00–2:45]{.section-time}
+
+## Which is better?
+
+Two AI summaries of the park comments.
+
+::: notes
+Show materials/slides/hook-summaries.md, A and B side by side. Vote. Then: "You can't answer that yet. You haven't said what better means." Reveal what's wrong with A after talking points.
+:::
+
+## Criteria first
+
+Write 3–5 **pass/fail** checks *before* you run it.
+
+Otherwise you'll judge by fluency, and **AI is always fluent.**
+
+## One change at a time
+
+Change five things and it improves: **which one helped?**
+
+Same prompt, different answers: **run it twice** before you trust a change.
+
+## Verify before it leaves your desk {.smaller}
+
+1. Numbers, dates, deadlines, amounts
+2. Names, contacts, links
+3. Citations: laws, codes, sections. **Look them up.**
+4. "Must," "required," "always"
+5. **What's missing**
+
+Then read it as the audience: plain, **fair**, accessible, no promises you can't keep.
+
+## Self-check: useful, not sufficient
+
+::: prompt
+Check your answer against the source and list anything you can't support.
+:::
+
+Catches some errors. Still the same tool **grading its own work.**
+
+## Activity 4: Test and refine
+
+::: activity
+**25 min · pairs or individual**
+
+1. **5 min** Write criteria
+2. **3 min** Round 0: run, score
+3. **12 min** Rounds 1–3: **one change**, new chat, score, log
+4. **5 min** Verify the best version with the checklist
+:::
+
+::: notes
+Circulate: "What did you change this round, just one thing?"
+:::
+
+## Your 2B prompt
+
+Open it. In fifteen minutes it becomes something you can reuse.
+
+# Break {.section-title}
+
+Back at **3:00**
+
+# 05 Capstone {.section-title}
+
+[3:00–3:40]{.section-time}
+
+## Your reusable prompt
+
+1. All five **CRAFT** parts
+2. At least one **technique**, chosen for a reason
+3. **[BRACKETS]** for what changes
+4. A **before you paste** line
+5. A **Test** part that flags assumptions
+6. A **before you send** checklist
+
+::: notes
+Show the exemplar from instructor/answer-keys.md for 60 seconds, then take it down.
+:::
+
+## Timing
+
+| | |
+| --- | --- |
+| **15 min** | Build it; run it once |
+| **12 min** | Partner test: fill brackets, run, score with the rubric, one **keep**, one **change** |
+| **7 min** | Revise |
+| **2 min** | Save it where you'll find it Monday |
+
+Done when your partner ran it **without asking you a question.**
+
+# 06 Wrap-up {.section-title}
+
+[3:40–4:00]{.section-time}
+
+## Two share-outs
+
+Your task · the technique you chose and why · what the partner test changed
+
+## Post-check
+
+Same eight questions · same code as this morning
+
+## Your Monday card
+
+**One task** I'll use my template on
+
+**One habit** I'll keep
+
+**One rule** I won't break
+
+## Three habits
+
+1. **New task, new chat**
+2. **Change one thing at a time**
+3. **You sign it, you own it**
+
+## What's next
+
+- Follow-up email: all handouts, the prompt library, Brookfall files, parking-lot answers
+- Agency AI policy: [POLICY OWNER]
+- This week: your template, on a real task, **with approved data**
+
+## Feedback {.center}
+
+[FORM LINK / QR CODE]
+
+Thank you.
