@@ -75,6 +75,7 @@ assessment/       Pre/post check, capstone rubric, feedback form
 instructor/       Prep checklist, run sheet, facilitator guide, setup, answer keys, after-action
 participants/     Pre-course and follow-up emails
 tools/            check_timing.py: verifies every module's minutes add up
+web/              Self-paced web edition of the whole course (one HTML page)
 docs/             Where the design came from: research, sources, ideas adopted
 ```
 
